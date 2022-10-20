@@ -1,4 +1,5 @@
 .container {
   display: grid;
-  /* style the columns and rows here */
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: 100px; 
 }

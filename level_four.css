@@ -1,26 +1,33 @@
 .container {
   display: grid;
-
+  grid-template-rows: 150px 100px 700px 150px; 
+  grid-template-columns: repeat(5, 1fr); 
+  height: 100%; 
 }
 
 #navbar {
-
+  grid-column-start: 1; 
+  grid-column-end: span end; 
 }
 
 #sidebar {
   writing-mode: vertical-rl;
-
+  grid-row-start: 2; 
+  grid-row-end: 4; 
 }
 
 #title {
-
+ grid-column-start: 2; 
+ grid-column-end: span end; 
 }
 
 
 #content {
-
+  grid-column-start: 2; 
+  grid-column-end: span end; 
 }
 
 #footer {
-
+  grid-column-start: 1; 
+  grid-column-end: span end; 
 }
