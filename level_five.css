@@ -1,24 +1,31 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-  grid-template-rows: repeat(auto-fit, 200px); 
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+  grid-template-rows: repeat(12, 100px); 
   height: 100%; 
 }
 
 #title {
   grid-column-start: 1; 
-  grid-column-end: span end; 
-  grid-row-start: 1; 
-  grid-row-end: 2; 
+  grid-column-end: end; 
 }
 
-.friend-cousin {
-  grid-column-start: 1; 
+#friend-cousin {
+  grid-column-end: span 1;
+}
+
+#sibling {
   grid-column-end: span 2; 
 }
 
-.sibling {
-  grid-column-start: 2; 
-  grid-column-end: span 4; 
+#aunt-uncle {
+  grid-row-end: span 2; 
 }
+
+#grandparents {
+  grid-column-end: span 2;
+  grid-row-end: span 2; 
+}
+
+
 /* Style other types of family members below*/
